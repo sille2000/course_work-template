@@ -1,6 +1,9 @@
-# harper-ls Projekt-Konfiguration
-# Doku: https://writewithharper.com/docs/integrations/language-server
-# harper-ls liest diese Datei automatisch, wenn sie im Projekt-Root liegt.
+# Harper-Konfiguration — REFERENZ ONLY
+# WICHTIG (getestet 2026-11-17): weder harper-ls (VS Code) noch harper-cli lesen diese Datei
+# aus dem Projekt (GitHub Issue #2339: harper-ls kennt keine per-workspace toml).
+# Wirksam in VS Code ist stattdessen .vscode/settings.json -> "harper.dialect",
+# "harper.diagnosticSeverity", "harper.linters.<RegelName>".
+# Diese Datei dient nur als Doku/Referenz; User-Config von harper-ls liegt in ~/.config/harper-ls.toml.
 
 # American English (ERAU-Vorgabe)
 dialect = "American"
