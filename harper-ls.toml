@@ -10,7 +10,8 @@ diagnosticSeverity = "warning"
 
 # Regeln anpassen — nur Abweichungen vom Default noetig, Rest bleibt default:
 [linters]
-LongSentences = false   # lange akademische Schachtelsaetze nicht melden
+LongSentences = false       # lange akademische Schachtelsaetze nicht melden
+AvoidContractions = true    # akademischer Stil: don't -> do not, isn't -> is not ...
 
 # isolateEnglish = true  # NICHT zuverlaessig (harper-cli 3.2.0 meldet deutsche Passagen
                         # trotzdem als SpellCheck) — fuer deutsche Texte cSpell/Duden
