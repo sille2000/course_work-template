@@ -16,7 +16,7 @@ Details und Regeln siehe `AGENT.md` im selben Ordner.
 
 ```powershell
 # Template kopieren (Pfade anpassen!)
-Copy-Item -Recurse "D:\Embry-Riddle Aeronautical University\Courses\hausarbeit-template" "D:\Embry-Riddle Aeronautical University\Courses\<kurs>-<titel>"
+Copy-Item -Recurse "D:\Embry-Riddle Aeronautical University\Courses\course_work-template" "D:\Embry-Riddle Aeronautical University\Courses\<kurs>-<titel>"
 
 # In das neue Projekt wechseln und Git-Repo anlegen
 cd "D:\Embry-Riddle Aeronautical University\Courses\<kurs>-<titel>"
