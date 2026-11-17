@@ -5,9 +5,13 @@
 # American English (ERAU-Vorgabe)
 dialect = "American"
 
-# Projektspezifische Wörter landen im Workspace-Dictionary (.harper-dictionary.txt
-# im Projekt-Root) und werden mit versioniert.
+# Sichtbarkeit der Markierungen: "hint" (default) / "warning" / "error"
+diagnosticSeverity = "warning"
 
-# Einzelne Regeln bei Bedarf deaktivieren, z. B.:
-# [linters]
-# LongSentences = false   # lange Sätze sind in akademischen Texten üblich
+# Regeln anpassen — nur Abweichungen vom Default noetig, Rest bleibt default:
+[linters]
+LongSentences = false   # lange akademische Schachtelsaetze nicht melden
+
+# isolateEnglish = true  # NICHT zuverlaessig (harper-cli 3.2.0 meldet deutsche Passagen
+                        # trotzdem als SpellCheck) — fuer deutsche Texte cSpell/Duden
+                        # nutzen; englische Fachbegriffe ins .harper-dictionary.txt
