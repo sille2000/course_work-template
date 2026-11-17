@@ -1,6 +1,8 @@
 # Build-Artefakte
 output/
 *.docx
+# pandoc-Referenzdokument (APA-Formatvorlage) wird versioniert:
+!apa-reference.docx
 
 # OS-Dateien
 .DS_Store

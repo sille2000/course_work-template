@@ -5,6 +5,6 @@ set -euo pipefail
 
 mkdir -p output
 
-pandoc src/*.md --citeproc --bibliography=references.bib --csl=apa-7th.csl -o output/hausarbeit.docx
+pandoc src/*.md --citeproc --bibliography=references.bib --csl=apa-7th.csl --reference-doc=apa-reference.docx -o output/hausarbeit.docx
 
 echo "Fertig: output/hausarbeit.docx"
