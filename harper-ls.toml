@@ -1,0 +1,13 @@
+# harper-ls Projekt-Konfiguration
+# Doku: https://writewithharper.com/docs/integrations/language-server
+# harper-ls liest diese Datei automatisch, wenn sie im Projekt-Root liegt.
+
+# American English (ERAU-Vorgabe)
+dialect = "American"
+
+# Projektspezifische Wörter landen im Workspace-Dictionary (.harper-dictionary.txt
+# im Projekt-Root) und werden mit versioniert.
+
+# Einzelne Regeln bei Bedarf deaktivieren, z. B.:
+# [linters]
+# LongSentences = false   # lange Sätze sind in akademischen Texten üblich

@@ -1,0 +1,7 @@
+# Build-Artefakte
+output/
+*.docx
+
+# OS-Dateien
+.DS_Store
+Thumbs.db
