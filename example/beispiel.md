@@ -1,3 +1,7 @@
+---
+bibliography: test.bib
+---
+
 # Testlauf: APA-7-Zitat und Export
 
 Der folgende Satz zitiert exemplarisch eine FAA-Quelle im Autor-Datum-System:

@@ -57,7 +57,9 @@ code --install-extension streetsidesoftware.code-spell-checker-german   # deutsc
 
 - **Harper** (`elijah-potter.harper`) — Spracheinstellung: **American English**; findet `harper-ls` automatisch über den PATH
 - **Markdown All in One** — Überschriften, Inhaltsverzeichnis
-- **Pandoc Citer** (`notZaki.pandocciter`) — Autovervollständigung der `@citation-keys` aus der .bib-Datei
+- **Pandoc Citer** (`notZaki.pandocciter`) — Autovervollständigung der `@citation-keys` aus der .bib-Datei. **Wichtig:** Pandoc Citer findet die Bib über den YAML-Header der Datei (`---
+bibliography: references.bib
+---` — ist in allen `src/*.md` des Templates gesetzt) oder über `.vscode/settings.json` → `PandocCiter.DefaultBibs`. Ohne eines von beidem gibt es keine Vorschläge bei `[@`.
 - **Code Spell Checker** — zusätzlich für deutsche Texte (deutsches Wörterbuch als eigene Extension installiert)
 
 ### Zotero-Konfiguration

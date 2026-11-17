@@ -1,0 +1,7 @@
+{
+  // Pandoc Citer: Standard-Bib fuer Autovervollstaendigung von [@keys]
+  "PandocCiter.DefaultBibs": ["references.bib"],
+  // Code Spell Checker: default Englisch (fuer Deutsch pro Datei <!-- cspell:language de -->)
+  "cSpell.language": "en",
+  // Harper liest dialect = "American" aus harper-ls.toml im Projekt-Root
+}

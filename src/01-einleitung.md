@@ -1,3 +1,7 @@
+---
+bibliography: references.bib
+---
+
 # Einleitung
 
 <!-- Fließtext in Markdown. Zitate als [@citekey], z. B. [@faa2019]. -->
