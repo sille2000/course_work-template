@@ -104,8 +104,16 @@ code --install-extension streetsidesoftware.code-spell-checker-german   # deutsc
 - [x] Exportkommando als Skript bereitgestellt: `build.ps1` (Windows) und `build.sh` (macOS/Linux) inkl. `--citeproc` (2026-11-17, im Template)
 - [x] `apa-7th.csl` besorgt (offizielles CSL-Repo, citation-style-language/styles, apa.csl = APA 7) und im Template abgelegt (2026-11-17)
 - [x] Git-Repo mit der Struktur oben initialisiert: Template `Courses/hausarbeit-template/` mit `git init`, `.gitignore` (output/, *.docx), erstem Commit `init:` (2026-11-17). Pro Kursprojekt: Template kopieren, `git init` erneut ausführen.
-- [ ] Testlauf: Beispieldokument mit APA-Zitat (z. B. Federal Aviation Administration, 2019) exportieren und Format prüfen
-- [ ] Für deutsche Arbeiten: Code-Spell-Checker-Wörterbuch und Duden-Mentor-Workflow dokumentieren
+- [ ] APA-7-Template in Word nachbilden (siehe nächster Punkt) — Titelseite + Formatierung bei erster Abgabe
+- [x] Testlauf: Beispieldokument mit APA-Zitat (Federal Aviation Administration, 2019) exportiert und geprüft (2026-11-17): `example/beispiel.md` + `example/test.bib` -> `output/beispiel-test.docx` enthält korrektes In-Text-Zitat `(Federal Aviation Administration, 2019)` und APA-7-Reference-List-Eintrag. Hinweis: Eigennamen im BibTeX-Titel einzeln klammern (`{United} {States}`), sonst wandelt CSL alles in sentence case um.
+- [x] Für deutsche Arbeiten: Workflow dokumentiert (2026-11-17, siehe Abschnitt "Deutsche Texte" unten)
+
+## Deutsche Texte
+
+- Harper prüft **nur Englisch** — deutsche Passagen ignoriert Harper bzw. meldet sie als Fehler (siehe Test: „Einleitung" wurde als SpellCheck-Lint markiert). Deutsche Abschnitte daher nicht Harper überlassen.
+- Stattdessen **Code Spell Checker** mit installiertem deutschen Wörterbuch (`streetsidesoftware.code-spell-checker-german`): Sprache in VS Code unten in der Statusleiste auf `de` stellen oder pro Datei `<!-- cspell:language de -->` im Kopf setzen;projektspezifisch in `.vscode/settings.json`: `"cSpell.language": "de,en"`.
+- Finaler Check deutscher Passagen: **Duden Mentor** (regelbasiert, Cloud — laut Regel 2 erlaubt), Text kopieren, prüfen, Korrekturen manuell zurückübertragen.
+- In gemischten Dokumenten: `<!-- cspell:ignore <wort> -->` bzw. Workspace-Dictionary `.harper-dictionary.txt` für englische Fachbegriffe, die Harper nicht kennen soll.
 
 ## Hinweise
 
