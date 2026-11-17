@@ -1,5 +1,20 @@
 # Harper-Regeln (harper-ls 3.2.0)
 
+## Cheatsheet: Inline-Codes & Wörterbuch (im Fließtext)
+
+| Was du willst | Wie |
+|---|---|
+| **Wort ins projektweite Wörterbuch** (gilt für alle Dateien des Projekts, wird mit Git versioniert) | `.harper-dictionary.txt` im Projekt-Root anlegen, **eine Zeile pro Wort** — oder im Editor: Quick Fix auf der Markierung → „Add to dictionary" (braucht `"harper.workspaceDictPath": ".harper-dictionary.txt"` + `"harper.codeActions.forceStable": true` in `.vscode/settings.json`, dann Language Server neu starten) |
+| **Wort ins globale Wörterbuch** (alle Projekte) | User-Dictionary `C:\Users\tsili\AppData\Roaming\harper-ls\dictionary.txt`, zeilenweise |
+| **Einzelne Meldung dauerhaft ignorieren** | Quick Fix → „Ignore" — landet in `.harper-ignored-lints.json` im Projekt-Root (versionierbar) |
+| **Eine Regel nur für eine Stelle ausblenden** | Quick Fix auf der Meldung → Regelname deaktivieren |
+| **Regel projektweit an/aus** | `.vscode/settings.json`: `"harper.linters.<RegelName>": false` (z. B. `"harper.linters.LongSentences": false`) — siehe Liste unten |
+| **CLI-Test einzelner Regeln** | `harper-cli lint --only AvoidContractions datei.md` |
+
+*Hinweis:* Es gibt keine `<!-- harper:ignore -->`-Inline-Kommentare — Ignorieren läuft über Quick Fix / `.harper-ignored-lints.json` / Wörterbuch.
+
+---
+
 971 Regeln insgesamt. Default = Wert, mit dem harper-ls startet. In `harper-ls.toml` unter `[linters]` nur Abweichungen eintragen, z. B. `LongSentences = false`.
 
 | Regel | default | Bedeutung |

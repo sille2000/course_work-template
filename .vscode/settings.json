@@ -9,5 +9,8 @@
   "harper.dialect": "American",
   "harper.diagnosticSeverity": "warning",
   "harper.linters.LongSentences": false,
-  "harper.linters.AvoidContractions": true
+  "harper.linters.AvoidContractions": true,
+  // Quick Fix "Add to dictionary" soll ins projektweite .harper-dictionary.txt schreiben:
+  "harper.workspaceDictPath": ".harper-dictionary.txt",
+  "harper.codeActions.forceStable": true
 }
