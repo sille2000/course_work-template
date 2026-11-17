@@ -42,24 +42,11 @@ git commit -m "init: Projektstruktur <kurs>-<titel>"
 | Export | `.\build.ps1` im Projektordner | erzeugt `output/hausarbeit.docx` (APA-Format + Literaturverzeichnis automatisch) |
 | Word | Titelseite + Seitenzahl ergänzen | siehe Abschnitt 5 |
 
-## 4. Git-Befehle (mit Erklärung)
+## 4. Versionieren mit Git
 
-```powershell
-git status              # Was wurde geändert? (roter/grüner Überblick)
-git diff                # Zeigt die genauen Änderungen seit dem letzten Commit
-
-git add -A              # ALLE Änderungen für den nächsten Commit vormerken ("Stage")
-git add src/02-hauptteil.md   # nur eine Datei vormerken
-
-git commit -m "draft: Kapitel 2 Methodik"   # Snapshot speichern — Message beschreibt den Stand
-# Commit-Präfixe: init: (Setup)  draft: (Text)  fix: (Korrektur)  apa: (Zitate/Format)  export: (Word-Output)
-
-git log --oneline       # Historie aller Commits (jede Zeile = ein Zeitstempel-Beleg deiner Autorenschaft)
-git tag v0.1-erstentwurf   # Meilenstein markieren (z. B. vor Abgabe)
-git tag                 # alle Meilensteine anzeigen
-```
-
-**Wichtig:** Nach jedem fertigen Abschnitt committen. Die Commit-Historie mit Zeitstempeln ist dein Nachweis eigenständiger Arbeit.
+Nach jedem fertigen Abschnitt: `git add -A` und `git commit -m "draft: …"`.
+Alle Git-Befehle mit Erklärungen stehen in **`GIT-CHEATSHEET.md`**.
+Die Commit-Historie mit Zeitstempeln ist dein Nachweis eigenständiger Arbeit — lieber öfter committen.
 
 ## 5. Export nach Word + Feinschliff
 
